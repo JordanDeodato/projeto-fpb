@@ -15,8 +15,23 @@
             <a href="#dec">Sistema Decimal</a>
             <a href="#oct">Sistema Octal</a>
             <a href="#hex">Sistema Hexadecimal</a>
-            <a href="#con">Conversões</a>
+            <a id="headMenu" href="#con">Conversões</a>
         </nav>
+        <div id="clicou"></div>
+        <div id="menu">
+            <ul>
+                <li><a href="#c1">Sistema Binário para Decimal</a></li>
+                <li><a href="#c2">Sistema Decimal para Binário</a></li>
+                <li><a href="#c3">Sistema Octal para Decimal</a></li>
+                <li><a href="#c4">Sistema Decimal para Octal</a></li>
+                <li><a href="#c5">Sistema Hexadecimal para Decimal</a></li>
+                <li><a href="#c6">Sistema Decimal para Hexadecimal</a></li>
+                <li><a href="#c7">Sistema Binário para Hexadecimal</a></li>
+                <li><a href="#c8">Sistema Hexadecimal para Binário</a></li>
+                <li><a href="#c9">Sistema Binário para Octal</a></li>
+                <li><a href="#c10">Sistema octal para Binário</a></li>
+            </ul>
+        </div>
         <h1>SISTEMAS NUMÉRICOS</h1>
     </header>
     <main>
@@ -54,40 +69,40 @@
         <br>
         <section id="con">
             <h1 class="h1sec">VAMOS CONVERTER?</h1>
-            <h2>Sistema Binário para Decimal</h2>
+            <h2 id="c1">Sistema Binário para Decimal</h2>
             <p>Cada número do sistema binário é representado da seguinte forma em sua conversão para decimal: <em>O número vezes a sua base (no caso 2 por ser binário) elevado a sua posição (n x b<sup>p</sup>).</em></p>
             <p>Exemplo: Convertendo 1011<sub>2</sub> para decimal temos: 1 x 2<sup>3</sup> + 1 x 2<sup>2</sup> + 1 x 2<sup>1</sup> + 1 x 2<sup>0</sup> = 11<sub>10</sub></p>
-            <h2>Sistema Decimal para Binário</h2>
+            <h2 id="c2">Sistema Decimal para Binário</h2>
             <p>Nesse tipo de conversão, ao invés de multiplicar pela base nós iremos dividir, e cada resto da divisão representará cada valor binário junto com o resultado da última divisão.</p>
             <p>Exemplo: Convertendo 14<sub>10</sub> para binário temos: 14/2 = 7, resta 0, 7/2 = 3, resta 1, 3/2 = 1, resta 1. Logo a conversão de 14 em decimais para binário será 1110<sub>2</sub>.</p>
-            <h2>Sistema Octal para Decimal</h2>
+            <h2 id="c3">Sistema Octal para Decimal</h2>
             <p>O método utilizado para converter de octal para decimal é idêntico ao método utilizado pelo sistema binário, mudando apenas sua base para 8 (oito).</p>
             <p>Exemplo: Convertendo 717<sub>8</sub> para decimal temos: 7 x 8<sup>2</sup> + 1 x 8<sup>1</sup> + 7 x 8<sup>0</sup> = 463<sub>10</sub></p>
-            <h2>Sistema Decimal para Octal</h2>
+            <h2 id="c4">Sistema Decimal para Octal</h2>
             <p>Assim como no exemplo passado, esse método também é idêntico ao método utilizado no sistema binário, mudando apenas sua base, no caso 8 (oito).</p>
             <p>Exemplo: Convertendo 463<sub>10</sub> para octal temos: 463/8 = 57, resta 7, 57/8 = 7, resta 1. Logo sua conversão resultará em 717<sub>8</sub></p>
-            <h2>Sistema Hexadecimal para Decimal</h2>
+            <h2 id="c5">Sistema Hexadecimal para Decimal</h2>
             <p>Os métodos de conversão para decimal tem em comum o mesmo processo mudando apenas sua base.</p>
             <p>Exemplo: Convertendo A17<sub>16</sub> para decimal temos: 10 x 16<sup>2</sup> + 1 x 16<sup>1</sup> + 7 x 16<sup>0</sup> = 2583<sub>10</sub> . Neste exemplo vemos que o simbolo A é representado pelo número 10 (dez), respeitando as regras do sistema octal.</p>
-            <h2>Sistema Decimal para Hexadecimal</h2>
+            <h2 id="c6">Sistema Decimal para Hexadecimal</h2>
             <p>Seguindo o mesmo processo de conversão de decimal para os demais sistemas, nesse também temos a divisão, tendo como divisor a base 16.</p>
             <p>Exemplo: Convertendo 2583<sub>10</sub> para hexadecimal temos: 2583/16 = 161, resta 7, 161/16 = 10, resta 1. Logo sua forma em hexadecimal será A17<sub>16</sub></p>
-            <h2>Sistema Binário para Hexadecimal</h2>
+            <h2 id="c7">Sistema Binário para Hexadecimal</h2>
             <p>Para converter de binário para hexadecimal a primeira coisa a ser feita é separar as unidades em grupos de 4 (quatro) bits, ou seja, 4 unidades binárias. Cada grupo de 4 bits (binário) representará uma unidade hexadecimal.</p>
             <p>Exemplo: Convertendo 1101000101100011<sub>2</sub> para hexadecimal temos: 1101 = 13, como 13 é representado pelo simbolo D então temos 1101 = D, 0001 = 1, 0110 = 6 e 0011 = 3. Então a conversão em hexadecimal será D163<sup>16</sup></p>
-            <h2>Sistema Hexadecimal para Binário</h2>
+            <h2 id="c8">Sistema Hexadecimal para Binário</h2>
             <p>Aqui o processo é reverso ao anterior, cada unidade hexadecimal representará 4 unidades em binário.</p>
             <p>Exemplo: Convertendo F2A7<sub>16</sub> em binário temos: F que vale 15 = 1111, 2 = 0010, A = 1010 e 7 = 011. O resultado desse processo será 1111001010100111<sub>2</sub> .... Lembrando que o processo de conversão de cada unidade, tanto desse método como do anterior são os mesmos citados anteriormente, multiplicação pela base e divisão pela base respectivamente.</p>
-            <h2>Sistema Binário para Octal</h2>
+            <h2 id="c9">Sistema Binário para Octal</h2>
             <p>Essa conversão ocorre da mesma forma de hexadecimal para binário com uma única diferença, ao invés de separar as unidades em grupos de 4, serão divididos em grupos de 3.</p>
             <p>Exemplo: Convertendo 011010111<sub>2</sub> para octal temos: 011 = 3, 010 = 2 e 111 = 7. Logo, sua conversão será 327<sub>8</sub> para </p>
-            <h2>Sistema octal para Binário</h2>
+            <h2 id="c10">Sistema octal para Binário</h2>
             <p>Seguindo o mesmo caminho da conversão de hexadecimal para binário, pegamos cada valor hexadecimal e convertemos para binário.</p>
             <p>Exemplo: Convertendo 327<sub>8</sub> pra binário temos: 3 = 011, 2 = 010 e 7 = 111. Sua representação em binário será 011010111<sub>2</sub></p>
         </section>
         <br>
         <section>
-            <h1 class="h1sec">Ufa! Então é isso, todas as formas de conversões dos sistemas numéricos. Espero ter te ajudado de alguma forma a entender como funciona cada conversão. Bons estudos e um forte abraço! Fui!</h1>
+            <h1 id="fim">Ufa! Então é isso, todas as formas de conversões dos sistemas numéricos. Espero ter te ajudado de alguma forma a entender como funciona cada conversão. Bons estudos e um forte abraço! Fui!</h1>
         </section>
     </main>
     <footer>
