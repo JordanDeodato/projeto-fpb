@@ -10,35 +10,39 @@
 <body>
     <header>
         <nav>
-            <a href="#h1sec">Inicio</a>
-            <a href="#bin">Sistema Binário</a>
-            <a href="#dec">Sistema Decimal</a>
-            <a href="#oct">Sistema Octal</a>
-            <a href="#hex">Sistema Hexadecimal</a>
-            <a id="headMenu" href="#con">Conversões</a>
-        </nav>
-        <div id="clicou"></div>
-        <div id="menu">
             <ul>
-                <li><a href="#c1">Sistema Binário para Decimal</a></li>
-                <li><a href="#c2">Sistema Decimal para Binário</a></li>
-                <li><a href="#c3">Sistema Octal para Decimal</a></li>
-                <li><a href="#c4">Sistema Decimal para Octal</a></li>
-                <li><a href="#c5">Sistema Hexadecimal para Decimal</a></li>
-                <li><a href="#c6">Sistema Decimal para Hexadecimal</a></li>
-                <li><a href="#c7">Sistema Binário para Hexadecimal</a></li>
-                <li><a href="#c8">Sistema Hexadecimal para Binário</a></li>
-                <li><a href="#c9">Sistema Binário para Octal</a></li>
-                <li><a href="#c10">Sistema octal para Binário</a></li>
+                <li><a href="#h1sec">Inicio</a></li>
+                <li><a href="#bin">Sistema Binário</a></li>
+                <li><a href="#dec">Sistema Decimal</a></li>
+                <li><a href="#oct">Sistema Octal</a></li>
+                <li><a href="#hex">Sistema Hexadecimal</a></li>
+                <li><a href="#con">Conversões</a>
+                    <ul>
+                        <li><a href="#c1">Sistema Binário para Decimal</a></li>
+                        <li><a href="#c2">Sistema Decimal para Binário</a></li>
+                        <li><a href="#c3">Sistema Octal para Decimal</a></li>
+                        <li><a href="#c4">Sistema Decimal para Octal</a></li>
+                        <li><a href="#c5">Sistema Hexadecimal para Decimal</a></li>
+                        <li><a href="#c6">Sistema Decimal para Hexadecimal</a></li>
+                        <li><a href="#c7">Sistema Binário para Hexadecimal</a></li>
+                        <li><a href="#c8">Sistema Hexadecimal para Binário</a></li>
+                        <li><a href="#c9">Sistema Binário para Octal</a></li>
+                        <li><a href="#c10">Sistema octal para Binário</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
-        <h1>SISTEMAS NUMÉRICOS</h1>
+        </nav>
+
     </header>
     <main>
+        <h1 id="principal">SISTEMAS NUMÉRICOS</h1>
         <section id="bin">
             <h1 class="h1sec">SISTEMA BINÁRIO</h1>
             <h2>Vamos entender como o sistema binário funciona?</h2>
-            <img src="imagens/codigo-binario.jpg" alt="imagem codigo binario">
+            <picture>
+                <source media="(max-width: 800px)" srcset="imagens/codigo-binario-p.jpg" type="image/jpg">
+                <img src="imagens/codigo-binario.jpg" alt="imagem codigo binario">
+            </picture>
             <p>O sistema binário utiliza apenas dois tipos de números em sua composição, o 0 (zero) e o 1 (um). Portanto, a sua base é 2.</p> 
             <p>Representação de um sistema com base binária: 10010<sub>2</sub></p>
         </section>
@@ -46,7 +50,10 @@
         <section id="dec">
             <h1 class="h1sec">SISTEMA DECIMAL</h1>
             <h2>Agora vamos enteder como funciona o sistema decimal!</h2>
-            <img src="imagens/codigo-decimal.jpg" alt="imagem codigo decimal">
+            <picture>
+                <source media="(max-width: 800px)" srcset="imagens/codigo-decimal-p.jpg" type="image/jpg">
+                <img style="width: 600px;" src="imagens/codigo-decimal.jpg" alt="imagem codigo-decimal">
+            </picture>
             <p>O sistema decimal pode ser composto por qualquer número e tem como sua base o número 10 (dez).</p>
             <p>Representação de um sistema com base decimal: 178<sub>10</sub></p>
         </section>
@@ -54,7 +61,10 @@
         <section id="oct">
             <h1 class="h1sec">SISTEMA OCTAL</h1>
             <h2>Chegou a vez do sistema octal, vamos entender!</h2>
-            <img src="imagens/codigo-octal.jpg" alt="imagem codigo octal">
+            <picture>
+                <source media="(max-width: 800px)" srcset="imagens/codigo-octal-p.jpg" type="image/jpg">
+                <img src="imagens/codigo-octal.jpg" alt="imagem codigo octal">
+            </picture>
             <p>O sistema octal possui uma peculiaridade, seus valores só podem ser compostos por números de 0 (zero) a 7 (sete), ou seja, não pode conter os números 8 (oito) e 9 (nove). Este sistema possui 8 (oito) componentes, tendo como esse número a sua base.</p>
             <p>Representação de um sistema com base octal: 752<sub>8</sub></p>
         </section>
@@ -62,7 +72,10 @@
         <section id="hex">
             <h1 class="h1sec">SISTEMA HEXADECIMAL</h1>
             <h2>Por último vamos entender o sistema hexadecimal!</h2>
-            <img src="imagens/codigo-hexadecimal.jpg" alt="imagem codigo hexadecimal">
+            <picture>
+                <source media="(max-width: 800px)" srcset="imagens/codigo-hexadecimal-p.jpg" type="image/jpg">
+                <img src="imagens/codigo-hexadecimal.jpg" alt="imagem codigo hexadecimal">
+            </picture>
             <p>O sistema hexadecimal possui um total de 16 simbolos, que vão do número 0 (zero) até o número 9 (nove), continuando com a letra A que representa o número 10 (dez) até a letra F que representa o número 16 (dezesseis). Sua base é 16 (dezesseis).</p>
             <p>Representação de um sistema hexadecimal: A17<sub>16</sub></p>
         </section>

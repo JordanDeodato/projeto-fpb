@@ -10,15 +10,16 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(0, 0, 0, 0.527);
     height: 130px;
+    width: 100%;
 }
 
 nav {
-    margin-top: 10px;
     text-align: center;
     padding: 20px 20px 40px 20px;
 }
 
-nav > a{
+li {
+    display: inline;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -32,14 +33,17 @@ nav > a:hover {
     border-radius: 10px;
 }
 
-nav > h1 {
-    padding: 0px;
+main h1#principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    background-color: rgba(85, 189, 15, 0.911);
+    padding: 10px;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
-
-main {
-    margin-top: 20px;
-}
-
 li > a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -54,18 +58,19 @@ li {
 
 li > a:hover {
     background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.877);
 }
 
-nav:hover > div {
-    display: block;
-    float: right;
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    margin-left: 70%;
-    margin-top: 2%;
-
+    margin-left: 65%;
+    margin-top: 0.5%;
 }
 
-#menu {
+ul li ul {
     display: none;
     float: right;
     background-color: rgba(0, 0, 0, 0.747);
@@ -79,9 +84,9 @@ h1 {
     color: rgb(199, 235, 204);
     background-color: rgba(7, 107, 7, 0.973);
     border-radius: 15px;
-    width: 40%;
+    width: 70%;
     margin: auto;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.747);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
 h2 {
@@ -90,8 +95,11 @@ h2 {
     background-color: rgb(82, 224, 69);
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.747);
-    width: 500px;
-    margin: 40px;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 7px;
 }
 
 section {
@@ -103,16 +111,15 @@ section {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.747);
 }
 
-img {
-    display: block;
-    margin: auto;
-    max-width: 500px;
-    max-height: 300px;
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
     padding: 20px;
-    width: 600px;
+    width: 80%;
     margin: auto;
     text-align: justify;
     font-family: 'Courier New', Courier, monospace;
@@ -127,7 +134,7 @@ p {
     color: rgb(199, 235, 204);
     background-color: rgba(7, 107, 7, 0.973);
     border-radius: 15px;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
